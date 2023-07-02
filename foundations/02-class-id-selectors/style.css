@@ -1,0 +1,24 @@
+.odd
+{
+  background-color: lightcoral;
+  font-family: Verdana, "DejuVu Sans", sans-serif;
+
+}
+
+#two
+{
+    color: royalblue;
+    font-size: 36px;
+}
+
+.odd#cooler
+{
+    font-size: 24px;
+}
+
+.another
+{
+    background-color: lightgreen;
+    font-size: 24px;
+    font-weight: bold;
+}
