@@ -15,13 +15,17 @@ body {
   justify-content: center;
 }
 
+/* Padding added */
 .modal {
+  display: flex;
   background: white;
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  padding: 20px;
 }
 
+/* Added flex-shrink */
 .icon {
   color: royalblue;
   font-size: 26px;
@@ -33,6 +37,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
+  margin-right: 8px;
 }
 
 .close-button {
@@ -48,22 +54,41 @@ body {
   justify-content: center;
   border: 1px solid #eee;
   padding: 0;
+  margin-left: auto;
+
 }
 
 button {
   cursor: pointer;
   padding: 8px 16px;
   border-radius: 8px;
+  justify-content: flex-end;
 }
-
+/* Added margin-top */
 button.continue {
   background: royalblue;
   border: 1px solid royalblue;
   color: white;
+  margin-top: 15px;
 }
-
+/* Added margin-top */
 button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+  margin-top: 15px;
+}
+
+/* Add font-size, weight & margin-bottom */
+.header{
+  font-size: 20px;
+  font-weight: bolder;
+  margin-bottom: 15px;
+  
+}
+/* Added additonal container, nearly correct, still to fix cross button */
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 8px;
 }
