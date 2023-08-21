@@ -1,12 +1,3 @@
-/* Almost complete, need to move content to the right
-
-to allow sidebar to stretch to bottom of page */
-
-  
-
-
-/* Added display: flex,flex-direction: column */
-
 body {
 
   display: flex;
@@ -16,10 +7,15 @@ body {
   min-height: 100vh;
   
 }
+
+.body {
   
-/* Added font-size & weight, align-items, padding-left */
-  
-  .header {
+  display: flex;
+  flex: 1;
+
+}
+
+.header {
   
   display: flex;
   align-items: center;
@@ -32,47 +28,34 @@ body {
   
 }
   
-/* Added display: flex, margin-top: auto, justify-content
- & align-items: center */
-  
 .footer {
-  
   display: flex;
   justify-content: center;
   align-items: center;
   height: 72px;
   background: #eee;
   color: darkmagenta;
-  margin-top: auto;
-  
+
 }
-  
-/* Added display: flex */
   
 .sidebar {
   
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  flex: 1;
+  flex-shrink: 0;
   padding: 16px;
   width: 300px;
   background: royalblue;
   box-sizing: border-box;
-  border: dotted red 5px;
-  
 }
   
 .content{
   
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  flex-wrap: wrap;
+  padding: 32px;
   
 }
-  
-/* Added this rule & changed text-decoration: none, change
-color: white, change font-size: 24px; */
   
 a{
   
@@ -81,8 +64,6 @@ a{
   font-size: 24px;
   
 }
-  
-/* Added this rule & changed list-style: none */
   
 ul{
   
@@ -94,6 +75,9 @@ ul{
   
 .card {
   
+  padding: 16px;
+  margin: 16px;
+  width: 300px;
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
